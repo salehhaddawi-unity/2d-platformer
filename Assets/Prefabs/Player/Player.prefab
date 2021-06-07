@@ -128,6 +128,7 @@ GameObject:
   - component: {fileID: 8128307141711142835}
   - component: {fileID: 8128307141711142836}
   - component: {fileID: 5168251848734213253}
+  - component: {fileID: 2667182664429652259}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -210,7 +211,7 @@ MonoBehaviour:
   jumpPower: 25
   allowedJumps: 2
   jumpDuration: 0.2
-  jumpEffect: {fileID: 8575377121547827367, guid: 8fdea087819dadf4cb9c75a92cb4227e, type: 3}
+  jumpEffect: {fileID: 3787235457851511924, guid: cc36fba3b21a20e4e830a295b5a8040a, type: 3}
   passThroughLayers: []
   state: 0
 --- !u!114 &8128307141711142836
@@ -251,6 +252,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 8128307141711142835}
   animator: {fileID: 0}
+--- !u!95 &2667182664429652259
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8128307141711142832}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e7faf1b9040fd44fb954a6e553e2825, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8128307142647824882
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8128307142859021830}
   - component: {fileID: 8128307142859021831}
+  - component: {fileID: 7297856314369831164}
   m_Layer: 8
   m_Name: PlayerSprite
   m_TagString: Untagged
@@ -409,3 +430,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &7297856314369831164
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8128307142859021829}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8b1991c4e03ad19439545466f366697c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
