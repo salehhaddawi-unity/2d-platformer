@@ -51,6 +51,10 @@ MonoBehaviour:
   pauseButton: 0
   horizontalLookAxis: 0
   verticalLookAxis: 0
+  leftArrow: 0
+  rightArrow: 0
+  upArrow: 0
+  downArrow: 0
 --- !u!114 &5538561295410076648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,6 +144,70 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 179b9364-e264-4f45-95f8-39de978ddbfa
     m_ActionName: Player/Pause[/XInputControllerWindows/start,/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5538561295410076650}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: GetLeftArrowInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 1b0e2e15-1a11-4f6b-89a1-36c61c963aa0
+    m_ActionName: Player/LeftArrow[/Keyboard/w,/Keyboard/leftArrow]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5538561295410076650}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: GetRightArrowInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 42e789f9-95bd-44ce-867d-974832c7218e
+    m_ActionName: Player/RightArrow[/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5538561295410076650}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: GetUpArrowInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 49791bd8-e61b-4a3b-971b-ffa2e65a0f43
+    m_ActionName: Player/UpArrow[/Keyboard/w,/Keyboard/upArrow]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5538561295410076650}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: GetDownArrowInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: a7512a2f-a82a-4462-ad96-d31d77346278
+    m_ActionName: Player/DownArrow[/Keyboard/s,/Keyboard/downArrow]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

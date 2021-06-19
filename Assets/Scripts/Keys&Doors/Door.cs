@@ -101,7 +101,7 @@ public class Door : MonoBehaviour
     /// Return: 
     /// void (no return)
     /// </summary>
-    protected virtual void Open()
+    public virtual void Open()
     {
         isOpen = true;
         openEvent.Invoke();
@@ -119,7 +119,7 @@ public class Door : MonoBehaviour
     /// Return: 
     /// void (no return)
     /// </summary>
-    protected virtual void Close()
+    public virtual void Close()
     {
         isOpen = false;
         closeEvent.Invoke();

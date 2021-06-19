@@ -100,6 +100,7 @@ MonoBehaviour:
   respawnLocation: {fileID: 7888097173380007759}
   checkpointAnimator: {fileID: 5704984002336359556}
   animatorActiveParameter: isActive
+  checkpointActivationEffect: {fileID: 0}
 --- !u!61 &7888097173380007754
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -136,7 +137,7 @@ Animator:
   m_GameObject: {fileID: 7888097173380007755}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7b67658a6d3624c419579f75379b79b8, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8848abc2021d720458926f6e7f2b923a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

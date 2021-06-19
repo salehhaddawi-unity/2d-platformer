@@ -54,6 +54,11 @@ public class InputManager : MonoBehaviour
         jumpHeld = default;
 
         pauseButton = default;
+
+        leftArrow = default;
+        rightArrow = default;
+        upArrow = default;
+        downArrow = default;
     }
 
     [Header("Movement Input")]
@@ -156,5 +161,59 @@ public class InputManager : MonoBehaviour
         Vector2 mouseLookVector = callbackContext.ReadValue<Vector2>();
         horizontalLookAxis = mouseLookVector.x;
         verticalLookAxis = mouseLookVector.y;
-    }   
+    }
+
+    [Header("Arrows Input")]
+    public bool leftArrow = false;
+
+    public void GetLeftArrowInput(InputAction.CallbackContext callbackContext)
+    {
+        leftArrow = !callbackContext.canceled;
+        if (InputManager.instance.isActiveAndEnabled)
+        {
+            StartCoroutine("ResetArrows");
+        }
+    }
+
+    public bool rightArrow = false;
+
+    public void GetRightArrowInput(InputAction.CallbackContext callbackContext)
+    {
+        rightArrow = !callbackContext.canceled;
+        if (InputManager.instance.isActiveAndEnabled)
+        {
+            StartCoroutine("ResetArrows");
+        }
+    }
+
+    public bool upArrow = false;
+
+    public void GetUpArrowInput(InputAction.CallbackContext callbackContext)
+    {
+        upArrow = !callbackContext.canceled;
+        if (InputManager.instance.isActiveAndEnabled)
+        {
+            StartCoroutine("ResetArrows");
+        }
+    }
+
+    public bool downArrow = false;
+
+    public void GetDownArrowInput(InputAction.CallbackContext callbackContext)
+    {
+        downArrow = !callbackContext.canceled;
+        if (InputManager.instance.isActiveAndEnabled)
+        {
+            StartCoroutine("ResetArrows");
+        }
+    }
+
+    private IEnumerator ResetArrows()
+    {
+        yield return new WaitForEndOfFrame();
+        leftArrow = false;
+        rightArrow = false;
+        upArrow = false;
+        downArrow = false;
+    }
 }

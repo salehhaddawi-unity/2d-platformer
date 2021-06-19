@@ -133,7 +133,8 @@ public class PlayerController : MonoBehaviour
         Walk,
         Jump,
         Fall,
-        Dead
+        Dead,
+        Puzzle
     }
 
     // The player's current state (walking, idle, jumping, or falling)
@@ -196,7 +197,7 @@ public class PlayerController : MonoBehaviour
     private void HandleMovementInput()
     {
         Vector2 movementForce = Vector2.zero;
-        if (Mathf.Abs(horizontalMovementInput) > 0 && state != PlayerState.Dead)
+        if (Mathf.Abs(horizontalMovementInput) > 0 && state != PlayerState.Dead && state != PlayerState.Puzzle)
         {
             movementForce = transform.right * movementSpeed * horizontalMovementInput;
         }
@@ -371,7 +372,7 @@ public class PlayerController : MonoBehaviour
     /// void (no return)
     /// </summary>
     /// <param name="newState">The PlayerState to set the current state to</param>
-    private void SetState(PlayerState newState)
+    public void SetState(PlayerState newState)
     {
         state = newState;
     }
